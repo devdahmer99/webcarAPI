@@ -1,0 +1,11 @@
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\bin\Debug\net9.0\webcarsAPI.Comunicacao.deps.json
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\bin\Debug\net9.0\webcarsAPI.Comunicacao.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\bin\Debug\net9.0\webcarsAPI.Comunicacao.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.AssemblyInfoInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.AssemblyInfo.cs
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.csproj.CoreCompileInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\refint\webcarsAPI.Comunicacao.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\ref\webcarsAPI.Comunicacao.dll

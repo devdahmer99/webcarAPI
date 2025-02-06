@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "J7rtrJ79tHmA8uIxCgPOi5pWLA5F+XcNWbj2RRTYvKw=",
+  "Source": "webcarsAPI.API",
+  "BasePath": "_content/webcarsAPI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

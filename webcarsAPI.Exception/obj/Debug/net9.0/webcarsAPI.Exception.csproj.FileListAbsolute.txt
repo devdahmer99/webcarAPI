@@ -1,0 +1,14 @@
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\bin\Debug\net9.0\webcarsAPI.Exception.deps.json
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\bin\Debug\net9.0\webcarsAPI.Exception.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\bin\Debug\net9.0\webcarsAPI.Exception.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.AssemblyInfoInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.AssemblyInfo.cs
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.csproj.CoreCompileInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\refint\webcarsAPI.Exception.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\ref\webcarsAPI.Exception.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\bin\Debug\net9.0\ResourceErrorMessages.resx
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.ResourceErrorMessages.resources
+C:\Projetos\webcarsAPI\src\webcarsAPI.Exception\obj\Debug\net9.0\webcarsAPI.Exception.csproj.GenerateResource.cache

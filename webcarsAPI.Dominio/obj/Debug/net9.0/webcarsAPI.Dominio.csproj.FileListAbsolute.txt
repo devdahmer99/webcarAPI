@@ -1,0 +1,15 @@
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\bin\Debug\net9.0\webcarsAPI.Dominio.deps.json
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\bin\Debug\net9.0\webcarsAPI.Dominio.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\bin\Debug\net9.0\webcarsAPI.Dominio.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\bin\Debug\net9.0\webcarsAPI.Comunicacao.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\bin\Debug\net9.0\webcarsAPI.Comunicacao.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.csproj.AssemblyReference.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.AssemblyInfoInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.AssemblyInfo.cs
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.csproj.CoreCompileInputs.cache
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsA.46F3D277.Up2Date
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\refint\webcarsAPI.Dominio.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\ref\webcarsAPI.Dominio.dll

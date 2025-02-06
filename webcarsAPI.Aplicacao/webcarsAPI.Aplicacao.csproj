@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="UseCase\Usuarios\Autenticar\**" />
+    <EmbeddedResource Remove="UseCase\Usuarios\Autenticar\**" />
+    <None Remove="UseCase\Usuarios\Autenticar\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\webcarsAPI.Dominio\webcarsAPI.Dominio.csproj" />
+    <ProjectReference Include="..\webcarsAPI.Exception\webcarsAPI.Exception.csproj" />
+    <ProjectReference Include="..\webcarsAPI.Infra\webcarsAPI.Infra.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
