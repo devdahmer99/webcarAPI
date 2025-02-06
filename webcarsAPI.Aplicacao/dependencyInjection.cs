@@ -2,6 +2,7 @@
 using webcarsAPI.Aplicacao.AutoMapper;
 using webcarsAPI.Aplicacao.UseCase.Usuarios;
 using webcarsAPI.Aplicacao.UseCase.Usuarios.Criar;
+using webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar;
 
 namespace webcarsAPI.Aplicacao
 {
@@ -21,6 +22,7 @@ namespace webcarsAPI.Aplicacao
         private static void AdicionaUseCase(IServiceCollection services)
         {
             services.AddScoped<IAdicionarUsuarioUseCase, AdicionarUsuarioUseCase>();
+            services.AddScoped<IAdicionaVeiculoUseCase, AdicionaVeiculoUseCase>();
             services.AddScoped<ILoginUsuarioUseCase, LoginUsuarioUseCase>();
         }
     }

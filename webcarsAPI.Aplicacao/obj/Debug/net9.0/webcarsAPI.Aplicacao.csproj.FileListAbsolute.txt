@@ -20,3 +20,4 @@ C:\Projetos\webcarsAPI\src\webcarsAPI.Aplicacao\obj\Debug\net9.0\ref\webcarsAPI.
 C:\Projetos\webcarsAPI\src\webcarsAPI.Aplicacao\bin\Debug\net9.0\ResourceErrorMessages.resx
 C:\Projetos\webcarsAPI\src\webcarsAPI.Aplicacao\bin\Debug\net9.0\webcarsAPI.Exception.dll
 C:\Projetos\webcarsAPI\src\webcarsAPI.Aplicacao\bin\Debug\net9.0\webcarsAPI.Exception.pdb
+C:\Projetos\webcarsAPI\src\webcarsAPI.Aplicacao\obj\Debug\net9.0\webcarsAPI.Aplicacao.sourcelink.json

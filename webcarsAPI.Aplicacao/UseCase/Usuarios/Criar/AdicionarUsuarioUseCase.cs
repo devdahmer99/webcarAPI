@@ -1,5 +1,6 @@
 using AutoMapper;
 using FluentValidation.Results;
+using webcarsAPI.Aplicacao.UseCase.Usuarios.ValicaoesUsuario;
 using webcarsAPI.Comunicacao.Requests.Usuarios;
 using webcarsAPI.Comunicacao.Responses.Usuario;
 using webcarsAPI.Dominio.Entidades;

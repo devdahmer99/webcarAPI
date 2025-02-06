@@ -68,5 +68,40 @@
         "StatusCode": 400
       }
     ]
+  },
+  {
+    "ContainingType": "webcarsAPI.API.Controllers.VeiculoController",
+    "Method": "CadastraVeiculo",
+    "RelativePath": "api/Veiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "webcarsAPI.Comunicacao.Requests.Veiculos.RequestAdicionaVeiculo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "webcarsAPI.Comunicacao.Responses.Veiculo.ResponseAdicionaVeiculo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   }
 ]

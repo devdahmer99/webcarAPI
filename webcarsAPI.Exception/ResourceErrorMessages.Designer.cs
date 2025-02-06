@@ -61,6 +61,51 @@ namespace webcarsAPI.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O chassi digitado já foi cadastrado..
+        /// </summary>
+        public static string CHASSI_JA_CADASTRADO {
+            get {
+                return ResourceManager.GetString("CHASSI_JA_CADASTRADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo chassi não pode ser vazio..
+        /// </summary>
+        public static string CHASSI_VAZIO {
+            get {
+                return ResourceManager.GetString("CHASSI_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo combustivel não pode ser vazio..
+        /// </summary>
+        public static string COMBUSTIVEL_VAZIO {
+            get {
+                return ResourceManager.GetString("COMBUSTIVEL_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo cor não pode ser vazio..
+        /// </summary>
+        public static string COR_VAZIO {
+            get {
+                return ResourceManager.GetString("COR_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A data precisa ser válida..
+        /// </summary>
+        public static string DATA_INVALIDA {
+            get {
+                return ResourceManager.GetString("DATA_INVALIDA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a E-mail ou senha incorretos.
         /// </summary>
         public static string EMAIL_AND_PASSWORD_NOT_MATCH {
@@ -97,6 +142,24 @@ namespace webcarsAPI.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo marca não pode ser vazio..
+        /// </summary>
+        public static string MARCA_VAZIA {
+            get {
+                return ResourceManager.GetString("MARCA_VAZIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo modelo não pode ser vazio..
+        /// </summary>
+        public static string MODELO_VAZIO {
+            get {
+                return ResourceManager.GetString("MODELO_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a O nome digitado é inválido.
         /// </summary>
         public static string NOME_INVALIDO {
@@ -115,6 +178,69 @@ namespace webcarsAPI.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo placa precisa ter no minimo 7 caracteres.
+        /// </summary>
+        public static string PLACA_INVALIDA {
+            get {
+                return ResourceManager.GetString("PLACA_INVALIDA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A placa já existe no sistema..
+        /// </summary>
+        public static string PLACA_JA_EXISTE {
+            get {
+                return ResourceManager.GetString("PLACA_JA_EXISTE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo placa não pode ser vazio..
+        /// </summary>
+        public static string PLACA_VAZIA {
+            get {
+                return ResourceManager.GetString("PLACA_VAZIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo quilometragem não pode ser vazio..
+        /// </summary>
+        public static string QUILOMETRAGEM_VAZIA {
+            get {
+                return ResourceManager.GetString("QUILOMETRAGEM_VAZIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O renavam digitado já existe..
+        /// </summary>
+        public static string RENAVAM_EXISTE {
+            get {
+                return ResourceManager.GetString("RENAVAM_EXISTE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo renavam precisa conter no minimo 11 caracteres..
+        /// </summary>
+        public static string RENAVAM_INVALIDO {
+            get {
+                return ResourceManager.GetString("RENAVAM_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo renavam não pode ser vazio..
+        /// </summary>
+        public static string RENAVAM_VAZIO {
+            get {
+                return ResourceManager.GetString("RENAVAM_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a A senha digitada é inválida..
         /// </summary>
         public static string SENHA_INVALIDA {
@@ -129,6 +255,15 @@ namespace webcarsAPI.Exception {
         public static string UNKNOW_ERROR {
             get {
                 return ResourceManager.GetString("UNKNOW_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O campo valor não pode ser vazio..
+        /// </summary>
+        public static string VALOR_VAZIO {
+            get {
+                return ResourceManager.GetString("VALOR_VAZIO", resourceCulture);
             }
         }
     }

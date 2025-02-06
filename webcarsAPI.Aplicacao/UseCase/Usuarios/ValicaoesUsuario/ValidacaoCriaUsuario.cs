@@ -1,9 +1,8 @@
 ﻿using FluentValidation;
-using webcarsAPI.Aplicacao.UseCase.Usuarios.ValicaoesUsuario;
 using webcarsAPI.Comunicacao.Requests.Usuarios;
 using webcarsAPI.Exception;
 
-namespace webcarsAPI.Aplicacao.UseCase.Usuarios
+namespace webcarsAPI.Aplicacao.UseCase.Usuarios.ValicaoesUsuario
 {
     public class ValidacaoCriaUsuario : AbstractValidator<RequestCriaUsuario>
     {
@@ -17,6 +16,6 @@ namespace webcarsAPI.Aplicacao.UseCase.Usuarios
                 .When(user => string.IsNullOrWhiteSpace(user.Email) == false, ApplyConditionTo.CurrentValidator)
                 .WithMessage(ResourceErrorMessages.EMAIL_INVALIDO);
             RuleFor(user => user.Senha).SetValidator(new ValidacaoSenha<RequestCriaUsuario>());
-        }   
+        }
     }
 }

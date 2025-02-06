@@ -13,3 +13,4 @@ C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Domini
 C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\refint\webcarsAPI.Dominio.dll
 C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.pdb
 C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\ref\webcarsAPI.Dominio.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Dominio\obj\Debug\net9.0\webcarsAPI.Dominio.sourcelink.json

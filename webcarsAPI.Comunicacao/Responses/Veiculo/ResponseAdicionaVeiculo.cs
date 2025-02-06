@@ -1,15 +1,17 @@
 ﻿namespace webcarsAPI.Comunicacao.Responses.Veiculo
 {
-    public class VeiculoResponse
+    public class ResponseAdicionaVeiculo
     {
-        public string? Id { get; set; }
-        public string? UsuarioId { get; set; }
+        public int? UsuarioId { get; set; }
         public string? Marca { get; set; }
         public string? Modelo { get; set; }
-        public string? Ano { get; set; }
+        public int? Ano { get; set; }
         public string? Placa { get; set; }
         public string? Cor { get; set; }
         public string? Chassi { get; set; }
         public string? Renavam { get; set; }
+        public string? Combustivel { get; set; }
+        public decimal Valor { get; set; }
+        public string? Quilometragem { get; set; }
     }
 }

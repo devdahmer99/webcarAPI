@@ -18,13 +18,13 @@ namespace webcarsAPI.Aplicacao.AutoMapper
         public void BuscaEntidade()
         {
             CreateMap<RequestCriaUsuario, Usuario>();
-            CreateMap<VeiculoRequest, Veiculo>();
+            CreateMap<RequestAdicionaVeiculo, Veiculo>();
         }
 
         public void RetornaEntidade()
         {
             CreateMap<Usuario, ResponseCriaUsuario>();
-            CreateMap<Veiculo, VeiculoResponse>();
+            CreateMap<Veiculo, ResponseAdicionaVeiculo>();
         }
     }
 }

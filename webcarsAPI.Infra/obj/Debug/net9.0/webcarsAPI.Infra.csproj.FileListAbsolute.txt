@@ -17,3 +17,4 @@ C:\Projetos\webcarsAPI\src\webcarsAPI.Infra\obj\Debug\net9.0\refint\webcarsAPI.I
 C:\Projetos\webcarsAPI\src\webcarsAPI.Infra\obj\Debug\net9.0\webcarsAPI.Infra.pdb
 C:\Projetos\webcarsAPI\src\webcarsAPI.Infra\obj\Debug\net9.0\webcarsAPI.Infra.genruntimeconfig.cache
 C:\Projetos\webcarsAPI\src\webcarsAPI.Infra\obj\Debug\net9.0\ref\webcarsAPI.Infra.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Infra\obj\Debug\net9.0\webcarsAPI.Infra.sourcelink.json

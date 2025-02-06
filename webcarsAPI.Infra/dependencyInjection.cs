@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using webcarsAPI.Dominio.Repositories.UnitOfWork;
 using webcarsAPI.Dominio.Repositories.Usuarios;
+using webcarsAPI.Dominio.Repositories.Veiculos;
 using webcarsAPI.Dominio.Seguranca;
 using webcarsAPI.Infra.DataAccess;
 using webcarsAPI.Infra.Repositories;
@@ -27,6 +28,7 @@ namespace webcarsAPI.Infra
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IVeiculosRepository, VeiculosRepository>();
         }
 
         private static void AddToken(IServiceCollection services, IConfiguration configuration)

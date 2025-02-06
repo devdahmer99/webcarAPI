@@ -13,9 +13,8 @@ namespace webcarsAPI.Dominio.Entidades
         [StringLength(100)]
         public string? Modelo { get; set; }
         [Required]
-        [StringLength(100)]
-        [DataType(DataType.Date)]
-        public string? Ano { get; set; }
+        [StringLength(4)]
+        public int? Ano { get; set; }
         [Required]
         [StringLength(100)]
         public string? Placa { get; set; }
@@ -29,12 +28,15 @@ namespace webcarsAPI.Dominio.Entidades
         [StringLength(100)]
         public string? Quilometragem { get; set; }
         [Required]
-        [StringLength(100)]
-        public string? Valor { get; set; }
+        [StringLength(9)]
+        public string? Chassi { get; set; }
         [Required]
+        [StringLength(11)]
+        public string? Renavam { get; set; }
+        [Required]
+        public decimal? Valor { get; set; }
         [StringLength(100)]
         public string? Imagem { get; set; }
-
         public int UsuarioId { get; set; }
         public Usuario? Usuario { get; set; }
     }

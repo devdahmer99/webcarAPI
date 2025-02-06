@@ -55,10 +55,15 @@ namespace webcarsAPI.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Ano")
+                    b.Property<int?>("Ano")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasMaxLength(4)
+                        .HasColumnType("int");
+
+                    b.Property<string>("Chassi")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("varchar(9)");
 
                     b.Property<string>("Combustivel")
                         .IsRequired()
@@ -71,7 +76,6 @@ namespace webcarsAPI.Infra.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("Imagem")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
@@ -95,13 +99,17 @@ namespace webcarsAPI.Infra.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<string>("Renavam")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("varchar(11)");
+
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Valor")
+                    b.Property<decimal?>("Valor")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 

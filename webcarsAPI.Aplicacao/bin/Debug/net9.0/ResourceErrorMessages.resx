@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CHASSI_JA_CADASTRADO" xml:space="preserve">
+    <value>O chassi digitado já foi cadastrado.</value>
+  </data>
+  <data name="CHASSI_VAZIO" xml:space="preserve">
+    <value>O campo chassi não pode ser vazio.</value>
+  </data>
+  <data name="COMBUSTIVEL_VAZIO" xml:space="preserve">
+    <value>O campo combustivel não pode ser vazio.</value>
+  </data>
+  <data name="COR_VAZIO" xml:space="preserve">
+    <value>O campo cor não pode ser vazio.</value>
+  </data>
+  <data name="DATA_INVALIDA" xml:space="preserve">
+    <value>A data precisa ser válida.</value>
+  </data>
   <data name="EMAIL_AND_PASSWORD_NOT_MATCH" xml:space="preserve">
     <value>E-mail ou senha incorretos</value>
   </data>
@@ -129,16 +144,46 @@
   <data name="EMAIL_VAZIO" xml:space="preserve">
     <value>O campo e-mail não pode ser vazio.</value>
   </data>
+  <data name="MARCA_VAZIA" xml:space="preserve">
+    <value>O campo marca não pode ser vazio.</value>
+  </data>
+  <data name="MODELO_VAZIO" xml:space="preserve">
+    <value>O campo modelo não pode ser vazio.</value>
+  </data>
   <data name="NOME_INVALIDO" xml:space="preserve">
     <value>O nome digitado é inválido</value>
   </data>
   <data name="NOME_VAZIO" xml:space="preserve">
     <value>O campo nome não pode ser vazio.</value>
   </data>
+  <data name="PLACA_INVALIDA" xml:space="preserve">
+    <value>O campo placa precisa ter no minimo 7 caracteres</value>
+  </data>
+  <data name="PLACA_JA_EXISTE" xml:space="preserve">
+    <value>A placa já existe no sistema.</value>
+  </data>
+  <data name="PLACA_VAZIA" xml:space="preserve">
+    <value>O campo placa não pode ser vazio.</value>
+  </data>
+  <data name="QUILOMETRAGEM_VAZIA" xml:space="preserve">
+    <value>O campo quilometragem não pode ser vazio.</value>
+  </data>
+  <data name="RENAVAM_EXISTE" xml:space="preserve">
+    <value>O renavam digitado já existe.</value>
+  </data>
+  <data name="RENAVAM_INVALIDO" xml:space="preserve">
+    <value>O campo renavam precisa conter no minimo 11 caracteres.</value>
+  </data>
+  <data name="RENAVAM_VAZIO" xml:space="preserve">
+    <value>O campo renavam não pode ser vazio.</value>
+  </data>
   <data name="SENHA_INVALIDA" xml:space="preserve">
     <value>A senha digitada é inválida.</value>
   </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Erro Desconhecido..</value>
+  </data>
+  <data name="VALOR_VAZIO" xml:space="preserve">
+    <value>O campo valor não pode ser vazio.</value>
   </data>
 </root>

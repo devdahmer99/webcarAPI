@@ -9,3 +9,4 @@ C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Co
 C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\refint\webcarsAPI.Comunicacao.dll
 C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.pdb
 C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\ref\webcarsAPI.Comunicacao.dll
+C:\Projetos\webcarsAPI\src\webcarsAPI.Comunicacao\obj\Debug\net9.0\webcarsAPI.Comunicacao.sourcelink.json
