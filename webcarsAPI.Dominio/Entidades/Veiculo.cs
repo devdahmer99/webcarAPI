@@ -30,6 +30,19 @@ namespace webcarsAPI.Dominio.Entidades
         [Required]
         [StringLength(9)]
         public string? Chassi { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string? Cidade { get; set; }
+
+        [Required]
+        [StringLength(1000)]
+        public string? Descricao { get; set; }
+
+        [Required]
+        [StringLength(11)]
+        public string? Telefone { get; set; }
+
         [Required]
         [StringLength(11)]
         public string? Renavam { get; set; }

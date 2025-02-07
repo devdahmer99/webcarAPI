@@ -19,6 +19,23 @@ namespace webcarsAPI.Infra.Migrations
                 .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("webcarsAPI.Dominio.Entidades.BlackListTokens", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Expiracao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BlackListTokens");
+                });
+
             modelBuilder.Entity("webcarsAPI.Dominio.Entidades.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -65,6 +82,11 @@ namespace webcarsAPI.Infra.Migrations
                         .HasMaxLength(9)
                         .HasColumnType("varchar(9)");
 
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
                     b.Property<string>("Combustivel")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -74,6 +96,11 @@ namespace webcarsAPI.Infra.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
 
                     b.Property<string>("Imagem")
                         .HasMaxLength(100)
@@ -100,6 +127,11 @@ namespace webcarsAPI.Infra.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("Renavam")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("varchar(11)");
+
+                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("varchar(11)");

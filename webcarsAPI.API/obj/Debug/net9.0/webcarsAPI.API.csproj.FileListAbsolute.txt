@@ -127,4 +127,5 @@ C:\Projetos\webcarsAPI\src\webcarsAPI.API\obj\Debug\net9.0\webcarsAPI.API.genrun
 C:\Projetos\webcarsAPI\src\webcarsAPI.API\obj\Debug\net9.0\ref\webcarsAPI.API.dll
 C:\Projetos\webcarsAPI\src\webcarsAPI.API\bin\Debug\net9.0\Scalar.AspNetCore.dll
 C:\Projetos\webcarsAPI\src\webcarsAPI.API\obj\Debug\net9.0\webcarsAPI.API.sourcelink.json
+C:\Projetos\webcarsAPI\src\webcarsAPI.API\obj\Debug\net9.0\webcarsAPI.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\webcarsAPI\src\webcarsAPI.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

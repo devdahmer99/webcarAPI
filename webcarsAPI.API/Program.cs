@@ -10,6 +10,7 @@ using webcarsAPI.Infra.DataAccess;
 using Scalar.AspNetCore;
 using webcarsAPI.Dominio.Entidades;
 using webcarsAPI.Infra.Seguranca.JWT;
+using webcarsAPI.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -22,11 +23,20 @@ builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)))
 builder.Services.AddInfra(builder.Configuration);
 builder.Services.AdicionaAplicacao();
 builder.Services.AddControllers();
+
+var conexaoFront = "ConexaoFront";
 builder.Services.AddCors(options =>
-      options.AddPolicy("AllowAll",
-        policy => policy.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader()));
+{
+    options.AddPolicy(name: conexaoFront, policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .AllowCredentials();
+    });
+});
+
+
 var signingKey = builder.Configuration.GetValue<string>("Settings:Jwt:SigningKey");
 builder.Services.AddAuthentication(config =>
 {
@@ -45,6 +55,20 @@ builder.Services.AddAuthentication(config =>
 
 var app = builder.Build();
 
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.Headers.Append("Access-Control-Allow-Origin", "http://localhost:5173");
+        context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        context.Response.Headers.Append("Access-Control-Allow-Headers", "*");
+        context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
+        return;
+    }
+    await next();
+});
+
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -58,7 +82,8 @@ if (app.Environment.IsDevelopment())
         });
     });
 }
-
+app.UseMiddleware<TokenBlackListMiddleware>();
+app.UseCors(conexaoFront);
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

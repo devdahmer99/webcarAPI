@@ -22,7 +22,15 @@ namespace webcarsAPI.Infra.Repositories
 
         public async Task<Usuario?> BuscaUsuarioPorEmail(string email)
         {
-            return await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(user => user.Email!.Equals(email));
+            await _context.Database.OpenConnectionAsync();
+            try
+            {
+                return await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(user => user.Email!.Equals(email));
+            }
+            finally
+            {
+                await _context.Database.CloseConnectionAsync();
+            }
         }
 
         public async Task<bool> VerificaExistenciaUsuarioPorEmail(string email)
