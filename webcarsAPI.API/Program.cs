@@ -63,6 +63,7 @@ app.Use(async (context, next) =>
         context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         context.Response.Headers.Append("Access-Control-Allow-Headers", "*");
         context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
+        context.Response.StatusCode = 204;
         return;
     }
     await next();

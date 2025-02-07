@@ -102,9 +102,9 @@ namespace webcarsAPI.Infra.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("varchar(1000)");
 
-                    b.Property<string>("Imagem")
+                    b.Property<byte[]>("Imagem")
                         .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("LONGBLOB");
 
                     b.Property<string>("Marca")
                         .IsRequired()

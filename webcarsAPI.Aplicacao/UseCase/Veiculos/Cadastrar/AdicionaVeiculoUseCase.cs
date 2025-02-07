@@ -26,6 +26,14 @@ namespace webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar
         public async Task<ResponseAdicionaVeiculo> Execute(RequestAdicionaVeiculo request)
         {
             await Validate(request);
+
+            byte[]? imagemData = null;
+
+            if (request.Imagem != null && request.Imagem.Length > 0)
+            {
+                imagemData = request.Imagem;
+            }
+
             var veiculo = _mapper.Map<Veiculo>(request);
             await _repository.AdicionarVeiculo(veiculo);
             await _unitOfWork.Commit();
@@ -39,7 +47,13 @@ namespace webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar
                 Placa = veiculo.Placa,
                 Cor = veiculo.Cor,
                 Chassi = veiculo.Chassi,
-                Renavam = veiculo.Renavam
+                Renavam = veiculo.Renavam,
+                Quilometragem = veiculo.Quilometragem,
+                Combustivel = veiculo.Combustivel,
+                Cidade = veiculo.Cidade,
+                Telefone = veiculo.Telefone,
+                Valor = veiculo.Valor,
+                Imagem = imagemData
             };
         }
 

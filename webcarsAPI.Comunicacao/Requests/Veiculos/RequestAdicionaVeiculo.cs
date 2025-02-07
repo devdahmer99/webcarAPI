@@ -12,7 +12,9 @@
         public string? Renavam { get; set; }
         public string? Combustivel { get; set; }
         public string? Quilometragem { get; set; }
+        public string? Cidade { get; set; }
+        public string? Telefone { get; set; }
         public decimal Valor { get; set; }
-        public string? Imagem { get; set; }
+        public byte[]? Imagem { get; set; }
     }
 }

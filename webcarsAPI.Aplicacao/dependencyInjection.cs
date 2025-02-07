@@ -2,6 +2,7 @@
 using webcarsAPI.Aplicacao.AutoMapper;
 using webcarsAPI.Aplicacao.UseCase.Usuarios;
 using webcarsAPI.Aplicacao.UseCase.Usuarios.Criar;
+using webcarsAPI.Aplicacao.UseCase.Veiculos.BuscaPorId;
 using webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar;
 
 namespace webcarsAPI.Aplicacao
@@ -24,6 +25,7 @@ namespace webcarsAPI.Aplicacao
             services.AddScoped<IAdicionarUsuarioUseCase, AdicionarUsuarioUseCase>();
             services.AddScoped<IAdicionaVeiculoUseCase, AdicionaVeiculoUseCase>();
             services.AddScoped<ILoginUsuarioUseCase, LoginUsuarioUseCase>();
+            services.AddScoped<IBuscaVeiculosPorIdUseCase, BuscaVeiculosPorIdUseCase>();
         }
     }
 }

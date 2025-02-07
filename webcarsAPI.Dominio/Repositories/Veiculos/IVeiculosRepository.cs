@@ -6,6 +6,7 @@ namespace webcarsAPI.Dominio.Repositories.Veiculos
 {
     public interface IVeiculosRepository
     {
+        Task<Veiculo?> BuscaVeiculoPorId(int veiculoId);
         Task AdicionarVeiculo(Veiculo veiculo);
         Task<bool> ExistePlacaCadastrada(string placa);
         Task<bool> ExisteRenavam(string renavam);

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace webcarsAPI.Dominio.Entidades
 {
     public class Veiculo
@@ -47,9 +48,9 @@ namespace webcarsAPI.Dominio.Entidades
         [StringLength(11)]
         public string? Renavam { get; set; }
         [Required]
-        public decimal? Valor { get; set; }
+        public decimal Valor { get; set; }
         [StringLength(100)]
-        public string? Imagem { get; set; }
+        public byte[]? Imagem { get; set; }
         public int UsuarioId { get; set; }
         public Usuario? Usuario { get; set; }
     }

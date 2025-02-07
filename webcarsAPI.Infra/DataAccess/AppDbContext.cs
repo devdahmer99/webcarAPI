@@ -15,6 +15,12 @@ namespace webcarsAPI.Infra.DataAccess {
             modelBuilder.Entity<Usuario>()
                 .HasMany(u => u.Veiculos)
                 .WithOne(v => v.Usuario);
+
+            modelBuilder.Entity<Veiculo>()
+                .Property(v => v.Imagem)
+                .HasColumnType("LONGBLOB");
         }
+
+
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using webcarsAPI.Comunicacao.Requests.Veiculos;
 using webcarsAPI.Comunicacao.Responses.Veiculo;
 using webcarsAPI.Dominio.Entidades;
 using webcarsAPI.Dominio.Repositories.Veiculos;
@@ -18,6 +17,11 @@ namespace webcarsAPI.Infra.Repositories
         public async Task AdicionarVeiculo(Veiculo veiculo)
         {
             await _context.Veiculos.AddAsync(veiculo);
+        }
+
+        public async Task<Veiculo?> BuscaVeiculoPorId(int veiculoId)
+        {
+            return await _context.Veiculos.AsNoTracking().FirstOrDefaultAsync(veiculo => veiculo.Id == veiculoId);
         }
 
         public async Task<bool> ExisteChassi(string chassi)
