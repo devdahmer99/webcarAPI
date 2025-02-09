@@ -1,0 +1,45 @@
+﻿using AutoMapper;
+using webcarsAPI.Comunicacao.Requests.Usuarios;
+using webcarsAPI.Comunicacao.Requests.Veiculos;
+using webcarsAPI.Comunicacao.Responses.Usuario;
+using webcarsAPI.Comunicacao.Responses.Veiculo;
+using webcarsAPI.Dominio.Entidades;
+
+namespace webcarsAPI.Aplicacao.AutoMapper
+{
+    public class AutoMapping : Profile
+    {
+        public AutoMapping()
+        {
+            BuscaEntidade();
+            RetornaEntidade();
+        }
+
+        public void BuscaEntidade()
+        {
+            CreateMap<RequestCriaUsuario, Usuario>();
+            CreateMap<RequestAdicionaVeiculo, Veiculo>()
+            .ForMember(dest => dest.Descricao, opt => opt.MapFrom(src => src.Descricao))
+            .ForMember(dest => dest.Marca, opt => opt.MapFrom(src => src.Marca))
+            .ForMember(dest => dest.Modelo, opt => opt.MapFrom(src => src.Modelo))
+            .ForMember(dest => dest.Ano, opt => opt.MapFrom(src => src.Ano))
+            .ForMember(dest => dest.Placa, opt => opt.MapFrom(src => src.Placa))
+            .ForMember(dest => dest.Cor, opt => opt.MapFrom(src => src.Cor))
+            .ForMember(dest => dest.Chassi, opt => opt.MapFrom(src => src.Chassi))
+            .ForMember(dest => dest.Renavam, opt => opt.MapFrom(src => src.Renavam))
+            .ForMember(dest => dest.Combustivel, opt => opt.MapFrom(src => src.Combustivel))
+            .ForMember(dest => dest.Quilometragem, opt => opt.MapFrom(src => src.Quilometragem))
+            .ForMember(dest => dest.Cidade, opt => opt.MapFrom(src => src.Cidade))
+            .ForMember(dest => dest.Telefone, opt => opt.MapFrom(src => src.Telefone))
+            .ForMember(dest => dest.Valor, opt => opt.MapFrom(src => src.Valor))
+            .ForMember(dest => dest.Imagem, opt => opt.MapFrom(src => src.Imagem))
+            .ForMember(dest => dest.UsuarioId, opt => opt.MapFrom(src => src.UsuarioId));
+        }
+
+        public void RetornaEntidade()
+        {
+            CreateMap<Usuario, ResponseCriaUsuario>();
+            CreateMap<Veiculo, ResponseAdicionaVeiculo>();
+        }
+    }
+}
