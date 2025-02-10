@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace webcarsAPI.Comunicacao.Responses.Veiculo
+﻿namespace webcarsAPI.Comunicacao.Responses.Veiculo
 {
     public class ResponseVeiculo
     {
-        public int? UsuarioId { get; set; }
+        public Guid? UsuarioId { get; set; }
         public string? Marca { get; set; }
+        public string? Descricao { get; set; }
         public string? Modelo { get; set; }
         public int? Ano { get; set; }
         public string? Placa { get; set; }

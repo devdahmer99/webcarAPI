@@ -40,6 +40,7 @@ namespace webcarsAPI.Aplicacao.AutoMapper
         {
             CreateMap<Usuario, ResponseCriaUsuario>();
             CreateMap<Veiculo, ResponseAdicionaVeiculo>();
+            CreateMap<Veiculo, ResponseVeiculo>();
         }
     }
 }

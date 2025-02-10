@@ -18,7 +18,7 @@ namespace webcarsAPI.Infra.DataAccess {
 
             modelBuilder.Entity<Veiculo>()
                 .Property(v => v.Imagem)
-                .HasColumnType("LONGBLOB");
+                .HasColumnType("string");
         }
 
 

@@ -40,7 +40,7 @@ namespace webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar
 
             return new ResponseAdicionaVeiculo
             {
-                UsuarioId = veiculo.UsuarioId,
+                UsuarioId  = veiculo.UsuarioId,
                 Descricao = veiculo.Descricao,
                 Marca = veiculo.Marca,
                 Modelo = veiculo.Modelo,

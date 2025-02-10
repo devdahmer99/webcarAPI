@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using webcarsAPI.Aplicacao.UseCase.Veiculos.Busca;
 using webcarsAPI.Aplicacao.UseCase.Veiculos.Cadastrar;
 using webcarsAPI.Comunicacao.Requests.Veiculos;
 using webcarsAPI.Comunicacao.Responses.Veiculo;
@@ -9,6 +10,40 @@ namespace webcarsAPI.API.Controllers
     [ApiController]
     public class VeiculoController : ControllerBase
     {
+
+
+        [HttpGet("obtemImagem")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> obtemImagem([FromServices] IBuscaVeiculosUseCase useCase)
+        {
+            var response = await useCase.Execute();
+
+            if(response != null)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest();
+        }
+
+
+        [HttpGet]
+        [ProducesResponseType(typeof(ResponseVeiculo), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> BuscaVeiculos([FromServices] IBuscaVeiculosUseCase useCase)
+        {
+            var response = await useCase.Execute();
+
+            if(response != null)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest();
+        }
+
+
         [HttpPost]
         [ProducesResponseType(typeof(ResponseAdicionaVeiculo), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

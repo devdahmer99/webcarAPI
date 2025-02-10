@@ -14,7 +14,7 @@ namespace webcarsAPI.Aplicacao.UseCase.Veiculos.BuscaPorId
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task<ResponseVeiculo> Execute(int veiculoId)
+        public async Task<ResponseVeiculo> Execute(Guid veiculoId)
         {
             var veiculo = await _repository.BuscaVeiculoPorId(veiculoId);
             if(veiculo == null)

@@ -11,6 +11,7 @@ using Scalar.AspNetCore;
 using webcarsAPI.Dominio.Entidades;
 using webcarsAPI.Infra.Seguranca.JWT;
 using webcarsAPI.API.Middlewares;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -85,6 +86,11 @@ if (app.Environment.IsDevelopment())
 }
 app.UseMiddleware<TokenBlackListMiddleware>();
 app.UseCors(conexaoFront);
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "uploads")),
+    RequestPath = "/uploads"
+});
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

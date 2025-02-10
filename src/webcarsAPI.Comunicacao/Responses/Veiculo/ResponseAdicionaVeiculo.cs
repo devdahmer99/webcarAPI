@@ -2,7 +2,7 @@
 {
     public class ResponseAdicionaVeiculo
     {
-        public int? UsuarioId { get; set; }
+        public Guid? UsuarioId { get; set; }
         public string? Marca { get; set; }
         public string? Descricao { get; set; }
         public string? Modelo { get; set; }

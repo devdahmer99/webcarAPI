@@ -19,7 +19,12 @@ namespace webcarsAPI.Infra.Repositories
             await _context.Veiculos.AddAsync(veiculo);
         }
 
-        public async Task<Veiculo?> BuscaVeiculoPorId(int veiculoId)
+        public async Task<List<Veiculo>> BuscarTodosOsVeiculos()
+        {
+            return await _context.Veiculos.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Veiculo?> BuscaVeiculoPorId(Guid veiculoId)
         {
             return await _context.Veiculos.AsNoTracking().FirstOrDefaultAsync(veiculo => veiculo.Id == veiculoId);
         }

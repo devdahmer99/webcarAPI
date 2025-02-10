@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webcarsAPI.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b6e341ce485bb6fffe0ece9838835cf7196944a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fd3b594a85d1d43597f18e49ed2f28dda042c0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("webcarsAPI.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webcarsAPI.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
