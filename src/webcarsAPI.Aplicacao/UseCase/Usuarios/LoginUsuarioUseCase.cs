@@ -33,7 +33,7 @@ namespace webcarsAPI.Aplicacao.UseCase.Usuarios
 
             return new ResponseUsuarioRegistrado
             {
-                Id = user.Id,
+                Identificador = user.Identificador,
                 Nome = user.Nome,
                 Token = _tokenGen.Generate(user)
             };
