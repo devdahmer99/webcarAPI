@@ -74,39 +74,31 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[12.4.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
             },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Options": {
-              "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.2, )"
             },
             "Scalar.AspNetCore": {
               "target": "Package",
@@ -203,7 +195,15 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
@@ -342,6 +342,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -485,17 +499,17 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [

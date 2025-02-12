@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using webcarAPI.Infra.DataAccess;
 using webcarsAPI.Infra.DataAccess;
 
 namespace webcarsAPI.API.Controllers

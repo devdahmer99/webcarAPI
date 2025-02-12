@@ -2,6 +2,6 @@
 {
     public class ResponseVeiculoImagem
     {
-        public Byte[] Imagem { get; set;}
+        public string Imagem { get; set;}
     }
 }

@@ -71,7 +71,15 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
@@ -210,6 +218,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -353,17 +375,17 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [

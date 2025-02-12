@@ -6,7 +6,7 @@ namespace webcarsAPI.Dominio.Entidades
     public class Veiculo
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid VeiculoId { get; set; }
         [Required]
         [StringLength(100)]
         public string? Marca { get; set; }
@@ -46,7 +46,8 @@ namespace webcarsAPI.Dominio.Entidades
         public decimal Valor { get; set; }
         [StringLength(100)]
         public string? Imagem { get; set; }
-        public Guid UsuarioId { get; set; }
-        public Usuario? Usuario { get; set; }
+
+        public string? UserId { get; set; }
+
     }
 }

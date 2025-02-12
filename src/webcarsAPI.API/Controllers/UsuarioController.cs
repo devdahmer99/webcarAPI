@@ -37,13 +37,5 @@ namespace webcarsAPI.API.Controllers
 
             return BadRequest();
         }
-
-        //[HttpPost("adicionar-cargo")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
-        //public async Task<IActionResult> AdicionarCargo([FromBody] RequestAdicionaCargo request)
-        //{
-
-        //}
     }
 }

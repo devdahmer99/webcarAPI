@@ -1,18 +1,19 @@
-﻿using webcarsAPI.Comunicacao.Requests.Veiculos;
-using webcarsAPI.Comunicacao.Responses.Veiculo;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using webcarsAPI.Dominio.Entidades;
 
 namespace webcarsAPI.Dominio.Repositories.Veiculos
 {
     public interface IVeiculosRepository
     {
-        Task<List<Veiculo>> BuscarTodosOsVeiculos();
-        Task<Veiculo?> BuscaVeiculoPorId(Guid veiculoId);
-        Task AdicionarVeiculo(Veiculo veiculo);
+        Task<Veiculo> AddVeiculoAsync(Veiculo veiculo);
+        void AtualizaVeiculo(Veiculo veiculo);
+        Task<List<Veiculo>> GetAllVeiculosAsync();
+        Task<Veiculo?> GetVeiculoByIdAsync(Guid veiculoId);
+        Task<bool> DeleteVeiculoAsync(Veiculo veiculo, Guid id);
+        Task<bool> ExisteChassi(string chassi);
         Task<bool> ExistePlacaCadastrada(string placa);
         Task<bool> ExisteRenavam(string renavam);
-        Task<bool> ExisteChassi(string chassi);
-        Task<bool> deletaVeiculo(Veiculo veiculo, Guid id);
-        void AtualizaVeiculo(Veiculo veiculo);
     }
 }

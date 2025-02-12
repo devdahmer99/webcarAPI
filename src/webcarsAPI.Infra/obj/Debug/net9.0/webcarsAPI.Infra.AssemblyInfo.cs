@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webcarsAPI.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bff75b3d1019b05e40d297e757ea8519b964fee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a66420f4c482bd22b0b8dad04466f910c4ba9423")]
 [assembly: System.Reflection.AssemblyProductAttribute("webcarsAPI.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webcarsAPI.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using webcarAPI.Infra.DataAccess;
 using webcarsAPI.Dominio.Entidades;
 using webcarsAPI.Dominio.Repositories.Veiculos;
-using webcarsAPI.Infra.DataAccess;
 
 namespace webcarsAPI.Infra.Repositories
 {
@@ -13,9 +16,10 @@ namespace webcarsAPI.Infra.Repositories
             _context = context;
         }
 
-        public async Task AdicionarVeiculo(Veiculo veiculo)
+        public async Task<Veiculo> AddVeiculoAsync(Veiculo veiculo)
         {
             await _context.Veiculos.AddAsync(veiculo);
+            return veiculo;
         }
 
         public void AtualizaVeiculo(Veiculo veiculo)
@@ -23,20 +27,21 @@ namespace webcarsAPI.Infra.Repositories
             _context.Veiculos.Update(veiculo);
         }
 
-        public async Task<List<Veiculo>> BuscarTodosOsVeiculos()
+        public async Task<List<Veiculo>> GetAllVeiculosAsync()
         {
             return await _context.Veiculos.AsNoTracking().ToListAsync();
         }
 
-        public async Task<Veiculo?> BuscaVeiculoPorId(Guid veiculoId)
+        public async Task<Veiculo?> GetVeiculoByIdAsync(Guid veiculoId)
         {
-            return await _context.Veiculos.AsNoTracking().FirstOrDefaultAsync(veiculo => veiculo.Id == veiculoId);
+            return await _context.Veiculos.AsNoTracking()
+                .FirstOrDefaultAsync(veiculo => veiculo.VeiculoId == veiculoId);
         }
 
-        public async Task<bool> deletaVeiculo(Veiculo veiculo, Guid id)
+        public async Task<bool> DeleteVeiculoAsync(Veiculo veiculo, Guid id)
         {
-            var result = await _context.Veiculos.FirstOrDefaultAsync(veiculo => veiculo.Id == id);
-            if(result == null)
+            var result = await _context.Veiculos.FirstOrDefaultAsync(v => v.VeiculoId == id);
+            if (result == null)
             {
                 return false;
             }

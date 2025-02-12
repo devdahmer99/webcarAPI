@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using webcarAPI.Infra.DataAccess;
 using webcarsAPI.Dominio.Repositories.UnitOfWork;
 
 namespace webcarsAPI.Infra.DataAccess

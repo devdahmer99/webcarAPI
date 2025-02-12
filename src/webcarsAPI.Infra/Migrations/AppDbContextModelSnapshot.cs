@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using webcarsAPI.Infra.DataAccess;
+using webcarAPI.Infra.DataAccess;
 
 #nullable disable
 
@@ -17,7 +17,7 @@ namespace webcarsAPI.Infra.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "9.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -220,61 +220,34 @@ namespace webcarsAPI.Infra.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("webcarsAPI.Dominio.Entidades.Usuario", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("Identificador")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Usuarios");
-                });
-
             modelBuilder.Entity("webcarsAPI.Dominio.Entidades.Veiculo", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("VeiculoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("Ano")
-                        .IsRequired()
+                    b.Property<int>("Ano")
                         .HasColumnType("int");
 
                     b.Property<string>("Chassi")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Cidade")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Combustivel")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Cor")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Descricao")
                         .HasMaxLength(1000)
@@ -282,22 +255,22 @@ namespace webcarsAPI.Infra.Migrations
 
                     b.Property<string>("Imagem")
                         .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Marca")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Modelo")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Placa")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Quilometragem")
                         .IsRequired()
@@ -306,23 +279,23 @@ namespace webcarsAPI.Infra.Migrations
 
                     b.Property<string>("Renavam")
                         .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Telefone")
                         .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
-                    b.Property<Guid>("UsuarioId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(18, 2)");
+                        .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("Id");
+                    b.HasKey("VeiculoId");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Veiculos");
                 });
@@ -380,18 +353,10 @@ namespace webcarsAPI.Infra.Migrations
 
             modelBuilder.Entity("webcarsAPI.Dominio.Entidades.Veiculo", b =>
                 {
-                    b.HasOne("webcarsAPI.Dominio.Entidades.Usuario", "Usuario")
-                        .WithMany("Veiculos")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("webcarsAPI.Dominio.Entidades.Usuario", b =>
-                {
-                    b.Navigation("Veiculos");
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
