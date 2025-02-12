@@ -1,5 +1,3 @@
-using System.Globalization;
-
 namespace webcarsAPI.Comunicacao.Responses.Usuario
 {
     public class ResponseCriaUsuario

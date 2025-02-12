@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using webcarsAPI.Dominio.Entidades;
 using webcarsAPI.Infra.DataAccess;
 
 namespace webcarsAPI.API.Controllers
@@ -15,25 +14,25 @@ namespace webcarsAPI.API.Controllers
             _context = context;
         }
 
-        [HttpPost("logout")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IActionResult> Logout()
-        {
-            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            if (string.IsNullOrEmpty(token))
-            {
-                return BadRequest("Token Invalido");
-            }
+        //[HttpPost("logout")]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        ////public async Task<IActionResult> Logout()
+        ////{
+        ////    var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+        ////    if (string.IsNullOrEmpty(token))
+        ////    {
+        ////        return BadRequest("Token Invalido");
+        ////    }
 
-            var blackListToken = new BlackListTokens
-            {
-                Token = token,
-                Expiracao = DateTime.Now.AddHours(1)
-            };
+        ////    var blackListToken = new BlackListTokens
+        ////    {
+        ////        Token = token,
+        ////        Expiracao = DateTime.Now.AddHours(1)
+        ////    };
 
-            _context.BlackListTokens.Add(blackListToken);
-            await _context.SaveChangesAsync();
-            return Ok();
-        }
+        ////    _context.BlackListTokens.Add(blackListToken);
+        ////    await _context.SaveChangesAsync();
+        ////    return Ok();
+        ////}
     }
 }

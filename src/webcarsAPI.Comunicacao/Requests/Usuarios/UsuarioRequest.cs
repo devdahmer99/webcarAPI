@@ -1,4 +1,3 @@
-using webcarsAPI.Comunicacao.Enums;
 
 namespace webcarsAPI.Comunicacao.Requests.Usuarios
 {
@@ -7,7 +6,6 @@ namespace webcarsAPI.Comunicacao.Requests.Usuarios
         public string? Nome { get; set; }
         public string? Email { get; set; }
         public string? Senha { get; set; }
-        public Permissoes Permissoes { get; set; }
         public int? VeiculoId { get; set; }
     }
 }

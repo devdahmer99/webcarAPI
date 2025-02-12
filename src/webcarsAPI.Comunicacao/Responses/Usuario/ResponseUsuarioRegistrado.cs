@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace webcarsAPI.Comunicacao.Responses.Usuario
+﻿namespace webcarsAPI.Comunicacao.Responses.Usuario
 {
     public class ResponseUsuarioRegistrado
     {

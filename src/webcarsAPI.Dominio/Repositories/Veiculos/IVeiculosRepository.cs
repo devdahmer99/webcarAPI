@@ -12,5 +12,7 @@ namespace webcarsAPI.Dominio.Repositories.Veiculos
         Task<bool> ExistePlacaCadastrada(string placa);
         Task<bool> ExisteRenavam(string renavam);
         Task<bool> ExisteChassi(string chassi);
+        Task<bool> deletaVeiculo(Veiculo veiculo, Guid id);
+        void AtualizaVeiculo(Veiculo veiculo);
     }
 }

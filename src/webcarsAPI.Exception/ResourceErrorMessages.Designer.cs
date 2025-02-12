@@ -266,5 +266,14 @@ namespace webcarsAPI.Exception {
                 return ResourceManager.GetString("VALOR_VAZIO", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Veiculo não encontrado..
+        /// </summary>
+        public static string VEICULO_NAO_ENCONTRADO {
+            get {
+                return ResourceManager.GetString("VEICULO_NAO_ENCONTRADO", resourceCulture);
+            }
+        }
     }
 }

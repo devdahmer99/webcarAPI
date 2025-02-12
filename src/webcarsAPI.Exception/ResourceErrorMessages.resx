@@ -186,4 +186,7 @@
   <data name="VALOR_VAZIO" xml:space="preserve">
     <value>O campo valor não pode ser vazio.</value>
   </data>
+  <data name="VEICULO_NAO_ENCONTRADO" xml:space="preserve">
+    <value>Veiculo não encontrado.</value>
+  </data>
 </root>

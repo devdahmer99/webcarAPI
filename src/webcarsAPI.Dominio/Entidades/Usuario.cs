@@ -1,6 +1,5 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using webcarsAPI.Dominio.Enums;
 
 namespace webcarsAPI.Dominio.Entidades
 {
@@ -22,9 +21,6 @@ namespace webcarsAPI.Dominio.Entidades
         public string? Senha { get; set; }
 
         public Guid Identificador { get; set; } = Guid.NewGuid();
-
-        [Required]
-        public string Permissao { get; set; } = Permissoes.Usuario;
 
         public ICollection<Veiculo>? Veiculos { get; set; }
     }

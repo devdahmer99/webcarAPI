@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webcarsAPI.Comunicacao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fd3b594a85d1d43597f18e49ed2f28dda042c0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bff75b3d1019b05e40d297e757ea8519b964fee")]
 [assembly: System.Reflection.AssemblyProductAttribute("webcarsAPI.Comunicacao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webcarsAPI.Comunicacao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
